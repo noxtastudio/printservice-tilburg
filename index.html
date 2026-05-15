@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Printservice Tilburg — Drukwerk, print en afwerking in Tilburg</title>
-<meta name="description" content="Voor 17:00 besteld, morgen in huis. Digitaal printen tot SRA3, groot formaat, drukwerk, afwerking en textielbedrukking. Ruim 30 jaar ervaring, lokaal in Tilburg.">
+<title>Concept demo — Printservice Tilburg redesign by Noxta Studio</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Concept redesign of Printservice Tilburg by Noxta Studio. Not the live website. See printservice-tilburg.nl for the real site.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -1036,9 +1037,74 @@
   }
   footer.site a { color: #8a90a8; transition: color .15s ease; }
   footer.site a:hover { color: #fff; }
+  /* ============ NOXTA CONCEPT BANNER ============ */
+  .noxta-banner {
+    background: linear-gradient(90deg, #7ce0ff 0%, #b08cff 50%, #ff8cc5 100%);
+    color: #05060e;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 0.85rem;
+    padding: 10px 0;
+    position: relative;
+    z-index: 200;
+    box-shadow: 0 2px 12px rgba(0,0,0,.08);
+  }
+  .noxta-banner-inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .noxta-banner-tag {
+    background: #05060e;
+    color: #7ce0ff;
+    font-weight: 700;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+  .noxta-banner-text {
+    color: #05060e;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  .noxta-banner-text strong { font-weight: 700; }
+  .noxta-banner-link {
+    background: #05060e;
+    color: #7ce0ff !important;
+    font-weight: 600;
+    font-size: 0.78rem;
+    padding: 6px 14px;
+    border-radius: 3px;
+    text-decoration: none;
+    flex-shrink: 0;
+    transition: background .15s ease;
+  }
+  .noxta-banner-link:hover { background: #1a1a1a; }
+  @media (max-width: 720px) {
+    .noxta-banner { font-size: 0.78rem; }
+    .noxta-banner-inner { gap: 8px; }
+    .noxta-banner-text { text-align: center; }
+  }
+
 </style>
 </head>
 <body>
+
+<!-- ============ NOXTA CONCEPT BANNER ============ -->
+<div class="noxta-banner">
+  <div class="noxta-banner-inner">
+    <span class="noxta-banner-tag">Concept demo</span>
+    <span class="noxta-banner-text">Redesign concept by <strong>Noxta Studio</strong>. Not the live Printservice Tilburg website. Internal links in this demo are non-functional.</span>
+    <a href="https://noxta.studio" class="noxta-banner-link" target="_blank" rel="noopener">noxta.studio ↗</a>
+  </div>
+</div>
 
 <!-- ============ TOP UTILITY BAR ============ -->
 <div class="topbar">
@@ -1066,10 +1132,10 @@
       <ul>
         <li><a href="index.html" class="is-current">Home</a></li>
         <li><a href="about.html">Over ons</a></li>
-        <li><a href="/producten/">Producten</a></li>
-        <li><a href="/klantenservice/">Klantenservice</a></li>
-        <li><a href="/online-repro/">Webshop</a></li>
-        <li><a href="/contact/">Contact</a></li>
+        <li><a href="#">Producten</a></li>
+        <li><a href="#">Klantenservice</a></li>
+        <li><a href="#">Webshop</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
@@ -1077,7 +1143,7 @@
       <button class="icon-btn" aria-label="Zoeken">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
       </button>
-      <a href="/winkelwagen/" class="icon-btn" aria-label="Winkelwagen">
+      <a href="#" class="icon-btn" aria-label="Winkelwagen">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
         <span class="count">0</span>
       </a>
@@ -1208,7 +1274,7 @@
           Open de webshop
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
         </a>
-        <div class="path-cta-sub">Bestanden op USB? Kom langs in de winkel — <a href="/printservice-tilburg-werkwijze-kleine-printopdrachten/">zo werkt het</a>.</div>
+        <div class="path-cta-sub">Bestanden op USB? Kom langs in de winkel — <a href="#">zo werkt het</a>.</div>
       </article>
 
       <article class="path-card b2b">
@@ -1220,7 +1286,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Drukproef en advies op materiaal</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Levertijden in overleg afgesproken</li>
         </ul>
-        <a href="/cdn-cgi/l/email-protection#066563687274736b4676746f6872756374706f65632b726f6a6473746128686a" class="path-cta">
+        <a href="mailto:print@printservice-tilburg.nl" class="path-cta">
           Vraag een offerte aan
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
@@ -1240,7 +1306,7 @@
     </div>
 
     <div class="products-grid">
-      <a href="/producten/" class="product-card">
+      <a href="#" class="product-card">
         <svg class="product-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
         <div class="product-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="9" width="12" height="9" rx="1"/><path d="M8 9V5h8v4M8 14h8M6 14h-2v-3a2 2 0 0 1 2-2"/><path d="M18 14h2v-3a2 2 0 0 0-2-2"/></svg>
@@ -1250,7 +1316,7 @@
         <div class="product-meta"><span>Vanaf <strong>1 stuk</strong></span><span>Tot SRA3</span></div>
       </a>
 
-      <a href="/producten/" class="product-card">
+      <a href="#" class="product-card">
         <svg class="product-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
         <div class="product-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m7 15 3-3 3 2 4-5"/><circle cx="8" cy="9" r="1"/></svg>
@@ -1260,7 +1326,7 @@
         <div class="product-meta"><span>Bouwtekening tot foto</span><span>XL</span></div>
       </a>
 
-      <a href="/producten/" class="product-card">
+      <a href="#" class="product-card">
         <svg class="product-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
         <div class="product-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h12v13H4z"/><path d="M8 4h12v13"/><path d="M7 12h6M7 16h6"/></svg>
@@ -1270,7 +1336,7 @@
         <div class="product-meta"><span>Kleine + grote oplages</span><span>FSC</span></div>
       </a>
 
-      <a href="/producten/" class="product-card">
+      <a href="#" class="product-card">
         <svg class="product-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
         <div class="product-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14v16H5z"/><path d="M8 4v16M5 9h3M5 13h3M5 17h3"/></svg>
@@ -1280,7 +1346,7 @@
         <div class="product-meta"><span>Binden · snijden · lamineren</span><span>In-house</span></div>
       </a>
 
-      <a href="/producten/" class="product-card">
+      <a href="#" class="product-card">
         <svg class="product-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
         <div class="product-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3 4 7l3 1v12h10V8l3-1-2-4-4 1a3 3 0 0 1-6 0z"/></svg>
@@ -1290,7 +1356,7 @@
         <div class="product-meta"><span>Vanaf 1 stuk</span><span>Snelle leverbaar</span></div>
       </a>
 
-      <a href="/producten/" class="product-card">
+      <a href="#" class="product-card">
         <svg class="product-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
         <div class="product-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="12" cy="12" r="3.5"/><path d="M7 5V4M17 5V4"/></svg>
@@ -1324,7 +1390,7 @@
           PDF-instellingen
         </span>
       </div>
-      <a href="/templates/" class="btn btn-primary">
+      <a href="#" class="btn btn-primary">
         Naar de templates
         <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
@@ -1406,7 +1472,7 @@
           </div>
         </div>
 
-        <a href="/printservice-tilburg/" class="about-link">
+        <a href="about.html" class="about-link">
           Meer over Printservice Tilburg
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
@@ -1438,7 +1504,7 @@
         <span class="section-eyebrow" style="color:#ffa8cf;">Contact</span>
         <h3>Een vraag of een offerte?</h3>
         <p>Loop binnen, bel of mail. We helpen je graag persoonlijk — geen ticket-systemen, geen menu's.</p>
-        <a href="/cdn-cgi/l/email-protection#0566606b717770684575776c6b71766077736c666028716c69677077622b6b69" class="btn btn-primary">Mail centrum </a>
+        <a href="mailto:print@printservice-tilburg.nl" class="btn btn-primary">Mail centrum </a>
       </div>
 
       <div class="contact-col">
@@ -1450,7 +1516,7 @@
       <div class="contact-col">
         <h4>Direct contact</h4>
         <p><a href="tel:+31135437031">013 - 543 70 31</a></p>
-        <p><a href="/cdn-cgi/l/email-protection#97f4f2f9e3e5e2fad7e7e5fef9e3e4f2e5e1fef4f2bae3fefbf5e2e5f0b9f9fb">centrum@<wbr>printservice-tilburg.nl</a></p>
+        <p><a href="mailto:print@printservice-tilburg.nl">centrum@<wbr>printservice-tilburg.nl</a></p>
         <p style="font-size:0.82rem;color:#8a8fa3;">
 </p>
       </div>
@@ -1472,16 +1538,16 @@
   <div class="container">
     <span>© 2026 Printservice Tilburg</span>
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/privacybeleid/">Privacybeleid</a></li>
-      <li><a href="/algemene-voorwaarden/">Algemene Voorwaarden</a></li>
-      <li><a href="/klantenservice/">Klantenservice</a></li>
-      <li><a href="/contact/">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Privacybeleid</a></li>
+      <li><a href="#">Algemene Voorwaarden</a></li>
+      <li><a href="#">Klantenservice</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // Mobile menu toggle
   const toggle = document.getElementById('menuToggle');
   const nav = document.getElementById('mainnav');
